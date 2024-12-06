@@ -1,0 +1,39 @@
+research_task:
+  description: >
+    Conduct comprehensive research on {topic}, drawing insights from the provided directory
+    using tools like directory_search_tool and pdf_search_tool. Supplement with internet resources.
+  expected_output: >
+    A research brief containing 10 bullet points summarizing the most relevant information,
+    insights, and case studies related to {topic}.
+  agent: researcher
+
+content_strategy_task:
+  description: >
+    Develop a detailed outline for a blog post on {topic}, including key sections, headings,
+    and subheadings. Ensure the flow aligns with the desired tone and objectives.
+  expected_output: >
+    A structured blog outline formatted as markdown, including:
+    - Introduction
+    - Key sections with headings and bullet points for each
+    - Conclusion
+  agent: content_strategist
+
+writing_task:
+  description: >
+    Write a full draft of the blog post based on the research and outline provided for {topic}.
+    Ensure the content is engaging, well-structured, and aligned with the blog’s objectives.
+  expected_output: >
+    A complete blog post formatted as markdown, containing:
+    - Introduction
+    - Main sections (expanded from the outline)
+    - Conclusion
+  agent: writer
+
+editing_task:
+  description: >
+    Edit and refine the draft for clarity, grammar, style, and tone. Suggest or incorporate visuals
+    and ensure the blog is ready for publication.
+  expected_output: >
+    A polished and formatted blog post with any visual elements included, ready for publication.
+    Ensure it is captivating, well-organized, and aligned with the intended audience's expectations.
+  agent: editor
